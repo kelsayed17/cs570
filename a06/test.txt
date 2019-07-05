@@ -1,0 +1,22 @@
+# Assumes
+#	init.txt has been run 
+#	provided directory "data" is in the current working directory.
+#	working data contains provided files for assignment
+place data/aesop/ants_and_grasshopper.txt /aesop/ants.txt
+place data/aesop/fox_and_crow.txt /aesop/fox&crow.txt
+place data/poe/murders_rue_morgue.txt /poe/murders_roe_moruge.txt
+place data/poe/four_beasts.txt /poe/four_beasts.txt
+place data/poe/contents.txt /poe_table_contents.txt
+# show complete listing
+listblocks
+# If your freemap allocation started at 0 when the file system
+# was loaded, you should see /aesop/ants.txt at block if you
+# run this immediately after the init.txt script
+dump block 6
+dump file /aesop/ants.txt
+dump free
+report
+
+
+
+

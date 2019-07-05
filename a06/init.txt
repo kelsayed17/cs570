@@ -1,0 +1,15 @@
+# initialize the disk
+format
+# create a couple directories
+mkdir /aesop
+mkdir /poe
+mkdir /cs570
+mkdir /cs570/filesystem
+# Show results with blocks used
+listblocks
+# Free block report
+# All blocks except those used above and the ones in
+# the superblock, FAT table, and free map.
+dump free
+# This should fail as /aesop is not a directory
+dump file /aesop
